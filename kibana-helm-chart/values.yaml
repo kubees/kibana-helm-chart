@@ -1,4 +1,6 @@
 kibana:
+  service:
+    type: LoadBalancer
   elasticsearchHosts: "http://elastic.monitoring.svc.cluster.local:9200"
   extraEnvs:
     - name: "ELASTICSEARCH_USERNAME"
